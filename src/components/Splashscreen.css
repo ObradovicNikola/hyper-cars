@@ -1,0 +1,46 @@
+.splash-screen {
+  width: 100vw;
+  background: #2e2d69;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container-1 path,
+.container-3 path,
+.container-2 path {
+  fill: transparent;
+  stroke: white;
+  stroke-width: 1px;
+  stroke-dasharray: 1600px;
+  stroke-dashoffset: 1600px;
+  -webkit-animation: line-anim 5s ease forwards;
+          animation: line-anim 5s ease forwards;
+}
+
+.container-2 path {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.container-2 path:nth-child(8),
+.container-2 path:nth-child(2) {
+  -webkit-animation: line-anim 0s ease forwards;
+          animation: line-anim 0s ease forwards;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+@-webkit-keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

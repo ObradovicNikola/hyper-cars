@@ -1,0 +1,41 @@
+body {}
+
+.splash-screen {
+    width: 100vw;
+    background: rgb(46, 45, 105);
+    display: flex;
+    justify-content: space-around;
+}
+
+.splash-screen * {}
+
+.container-1 path,
+.container-3 path,
+.container-2 path {
+    fill: transparent;
+    stroke: white;
+    stroke-width: 1px;
+    stroke-dasharray: 1600px;
+    stroke-dashoffset: 1600px;
+    animation: line-anim 5s ease forwards;
+}
+
+.container-2 path {
+    animation-delay: 2s;
+}
+
+.container-2 path:nth-child(8),
+.container-2 path:nth-child(2) {
+    animation: line-anim 0s ease forwards;
+    animation-delay: 1.5s;
+}
+
+.container-3 {
+    // background: green;
+}
+
+@keyframes line-anim {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
