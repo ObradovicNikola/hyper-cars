@@ -1,11 +1,10 @@
 .showcase {
   width: 100%;
   height: 60vh;
-  max-height: 100vh;
   position: relative;
 }
 
-video {
+.showcase video {
   -o-object-fit: cover;
      object-fit: cover;
   height: 100%;
@@ -20,4 +19,94 @@ video {
   bottom: 0;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(28, 28, 30, 0)), color-stop(99%, #1c1c1e), to(#1c1c1e));
   background-image: linear-gradient(-180deg, rgba(28, 28, 30, 0) 0%, #1c1c1e 99%, #1c1c1e);
+}
+
+.home-container h1 {
+  color: #e9e2bf;
+  width: 90%;
+  margin: 30px auto;
+  font-size: 3rem;
+}
+
+.car-container {
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.car-container:nth-of-type(odd) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.car-container .img-box {
+  width: 100%;
+  height: 100%;
+  background: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.car-container .img-box img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.car-container .img-box .img-shadow {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #ffc000;
+  background: radial-gradient(circle, rgba(255, 192, 0, 0) 0%, #1c1c1e 100%);
+  opacity: 0;
+  -webkit-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;
+}
+
+.car-container .img-box:hover {
+  cursor: pointer;
+}
+
+.car-container .img-box:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.car-container .img-box:hover .img-shadow {
+  opacity: 1;
+}
+
+.car-container .wrapper {
+  color: #e9e2bf;
+  width: 60%;
+}
+
+.car-container .wrapper h2 {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.car-container .wrapper p {
+  padding: 30px;
 }

@@ -1,0 +1,28 @@
+$text: rgb(233, 226, 191);
+
+.showcase img {
+    object-fit: cover; // not supported in IE
+    height: 100%;
+    width: 100%;
+}
+
+.car-info {
+    color: $text;
+    width: 90%;
+    margin: 30px auto;
+    font-size: 3rem;
+}
+
+.car-info h1 {
+    font-size: 3rem;
+    margin: 20px 0;
+}
+
+.car-info .car-stats,
+.car-info p {
+    margin-bottom: 50px;
+}
+
+.car-info .car-stats h2 {
+    font-size: 2rem;
+}

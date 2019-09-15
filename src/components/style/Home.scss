@@ -1,12 +1,13 @@
+$text: rgb(233, 226, 191);
+
 .showcase {
     width: 100%;
     height: 60vh;
-    max-height: 100vh;
     position: relative;
 }
 
-video {
-    object-fit: cover;
+.showcase video {
+    object-fit: cover; // not supported in IE
     height: 100%;
     width: 100%;
     // object-fit: fill;
@@ -20,4 +21,80 @@ video {
     bottom: 0;
     background-image: linear-gradient(-180deg, rgba(28, 28, 30, 0) 0%, #1c1c1e 99%, #1c1c1e);
     // transition: opacity .3s;
+}
+
+.home-container h1 {
+    color: $text;
+    width: 90%;
+    margin: 30px auto;
+    font-size: 3rem;
+}
+
+.car-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    margin-bottom: 40px;
+    // flex-direction: row-reverse;
+}
+
+.car-container:nth-of-type(odd) {
+    flex-direction: row-reverse;
+}
+
+.car-container .img-box {
+    width: 100%;
+    height: 100%;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.car-container .img-box img {
+    object-fit: cover; // not supported in IE
+    height: 100%;
+    width: 100%;
+    transform: scale(1);
+    transition: all .5s ease-in-out
+}
+
+.car-container .img-box .img-shadow {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgb(255, 192, 0);
+    background: radial-gradient(circle, rgba(255, 192, 0, 0) 0%, rgba(28, 28, 30, 1) 100%);
+    opacity: 0;
+    transition: opacity .5s ease-in-out
+}
+
+.car-container .img-box:hover {
+    cursor: pointer;
+}
+
+.car-container .img-box:hover img {
+    transform: scale(1.2);
+}
+
+.car-container .img-box:hover .img-shadow {
+    opacity: 1;
+}
+
+.car-container .wrapper {
+    color: $text;
+    width: 60%;
+}
+
+.car-container .wrapper h2 {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.car-container .wrapper p {
+    padding: 30px;
 }

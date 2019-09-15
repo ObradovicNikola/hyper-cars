@@ -30,7 +30,34 @@ code {
 
 #root {
   height: 100vh;
-  overflow-y: auto;
   overflow-x: hidden;
+  overflow-y: auto;
   background: rgb(28, 28, 30);
+  /* without position relative, navigation is positioned absolute to body which is displayed over root overflow */
+  position: relative;
+  /* scrollbar for Firefox */
+  scrollbar-color: grey rgb(255, 192, 0);
+  scrollbar-width: thin;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(255, 192, 0);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(172, 129, 0);
 }
