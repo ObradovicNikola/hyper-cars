@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import './style/Home.css'
 import { hyperCars } from '../data'
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default class Home extends Component {
     constructor() {
@@ -32,6 +35,32 @@ export default class Home extends Component {
             )
         })
 
+        const slides = this.state.hyperCars.map((car) => {
+            return (
+                <div key={car.id + 10}>
+                    <Link to={{
+                        pathname: '/details',
+                        details: { ...car },
+                    }} className="slide" >
+                        <p>{car.title}</p>
+                        <div className="img-box">
+                            <img src={`${process.env.PUBLIC_URL}/images/${car.img}`} alt={car.title} />
+                            <div className="img-shadow"></div>
+                        </div>
+                    </Link>
+                </div >
+
+            )
+        })
+
+        var settings = {
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1
+        };
+
         return (
             <div className="home-container">
                 <div className="showcase">
@@ -41,7 +70,9 @@ export default class Home extends Component {
                     {/* DISPLAY IMAGE IF WIDTH < 1000px */}
                     <div className="video-shadow"></div>
                 </div>
-                <p>CAROUSEL</p>
+                <Slider {...settings} style={{ width: '60%', margin: '30px auto' }}>
+                    {slides}
+                </Slider>
                 <h1>Top 10 best hypercars 2019</h1>
                 {hyperCars}
             </div >

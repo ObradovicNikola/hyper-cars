@@ -1,4 +1,5 @@
 $text: rgb(233, 226, 191);
+$highlight: rgb(255, 192, 0);
 
 .showcase {
     width: 100%;
@@ -23,10 +24,120 @@ $text: rgb(233, 226, 191);
     // transition: opacity .3s;
 }
 
+.slide {
+    box-sizing: border-box;
+    background: black;
+    width: 100%;
+    height: 200px;
+    // margin: auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    // flex-direction: column;
+    text-decoration: none;
+    border-left: 3px solid $highlight;
+    margin-left: 1px;
+}
+
+.slide p {
+    color: $text;
+    margin: auto;
+    z-index: 1;
+    font-size: 1.5rem;
+    padding: 4px;
+    // position: absolute;
+    // top: 30%;
+    margin-left: 60px;
+}
+
+
+.slide .img-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.slide .img-box img {
+    object-fit: cover; // not supported in IE
+    height: 100%;
+    width: 90%;
+    transform: scale(1);
+    transition: all .5s ease-in-out
+}
+
+.slide .img-box .img-shadow {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(255, 192, 0, 0);
+    background: radial-gradient(circle, rgba(255, 192, 0, 0) 0%, rgba(28, 28, 30, 1) 100%);
+    opacity: 0;
+    transition: opacity .5s ease-in-out
+}
+
+.slide:hover {
+    cursor: pointer;
+}
+
+.slide:hover img {
+    transform: scale(1.2);
+}
+
+.slide:hover .img-shadow {
+    opacity: 1;
+}
+
+.slick-dots {
+    border-radius: 0;
+    width: 20px;
+    content: ""
+}
+
+.slick-active {
+    color: $highlight !important;
+}
+
+// .slide-shadow {
+//     position: absolute;
+//     left: 0;
+//     right: 0;
+//     top: 0;
+//     bottom: 0;
+//     background: rgb(28, 28, 30);
+//     background: linear-gradient(120deg, rgba(28, 28, 30, 1) 41%, rgba(255, 192, 0, 0) 100%);
+//     opacity: 0;
+//     transition: opacity .5s ease-in-out
+// }
+
+// .slide:hover .slide-shadow {
+//     opacity: .7;
+// }
+
+
+// .slide img {
+//     object-fit: cover; // not supported in IE
+//     height: 80%;
+//     width: 100%;
+//     margin-left: auto;
+//     transform: scale(1);
+//     transition: transform .3s ease-in-out
+// }
+
+// .slide:hover img {
+//     transform: scale(1.2)
+// }
+
 .home-container h1 {
     color: $text;
     width: 90%;
-    margin: 30px auto;
+    margin: 60px auto 30px;
     font-size: 3rem;
 }
 
@@ -38,14 +149,13 @@ $text: rgb(233, 226, 191);
     // flex-direction: row-reverse;
 }
 
-.car-container:nth-of-type(odd) {
+.car-container:nth-of-type(even) {
     flex-direction: row-reverse;
 }
 
 .car-container .img-box {
     width: 100%;
     height: 100%;
-    background: red;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -67,7 +177,7 @@ $text: rgb(233, 226, 191);
     right: 0;
     top: 0;
     bottom: 0;
-    background: rgb(255, 192, 0);
+    background: rgba(255, 192, 0, 0);
     background: radial-gradient(circle, rgba(255, 192, 0, 0) 0%, rgba(28, 28, 30, 1) 100%);
     opacity: 0;
     transition: opacity .5s ease-in-out

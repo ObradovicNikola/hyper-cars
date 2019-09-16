@@ -17,9 +17,13 @@ export default function Details(props) {
     if (props.location.details)
         car = props.location.details
     else car = sampleCar
-    document.getElementById('root').scrollTo(0, 0)
+    // document.getElementById('root').scrollTo(0, 0)
+    document.getElementById('root').scrollTo({
+        top: 0,
+        behavior: 'smooth',
+    })
     return (
-        <div className="details-container" onCompositionStart={() => { document.getElementById('root').scrollTo(0, 0); console.log('clicked'); }}>
+        <div className="details-container">
             <div className="showcase">
                 <img src={`${process.env.PUBLIC_URL}/images/${car.img}`} alt={car.title} />
                 <div className="video-shadow"></div>

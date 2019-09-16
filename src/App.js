@@ -22,7 +22,14 @@ function App() {
           <Route component={Default}></Route>
         </Switch>
       </BrowserRouter>
+      <div className="back-to-top" onClick={() => document.getElementById('root').scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      })}>
+        <i className="fas fa-arrow-circle-up"></i>
+      </div>
     </React.Fragment>
+
   );
 }
 

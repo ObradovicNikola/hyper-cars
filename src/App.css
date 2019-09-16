@@ -27,7 +27,28 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 30px;
+  color: white;
+  transition: color .3s ease-in-out;
+}
+
+.back-to-top:hover {
+  color: rgb(255, 192, 0);
+  cursor: pointer;
+  transition: color .3s ease-in-out;
+
+}
+
+.back-to-top .fas {
+  font-size: 2.5rem;
 }
