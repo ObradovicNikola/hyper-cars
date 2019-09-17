@@ -55,9 +55,6 @@ export default class Navbar extends Component {
                         <li>
                             <NavLink to="/contact" className="nav-link" activeClassName='is-active'>CONTACT</NavLink>
                         </li>
-                        <li>
-                            <NavLink to="/gallery" className="nav-link" activeClassName='is-active'>GALLERY?</NavLink>
-                        </li>
                     </ul>
                 </div>
             </nav >
