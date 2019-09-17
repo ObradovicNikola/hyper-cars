@@ -8,6 +8,7 @@ import Home from './components/Home'
 import Default from './components/Default'
 import Contact from './components/Contact'
 import Details from './components/Details';
+import withSplashScreen from './components/withSplashScreen';
 
 function App() {
   return (
@@ -33,4 +34,4 @@ function App() {
   );
 }
 
-export default App;
+export default withSplashScreen(App);

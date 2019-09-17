@@ -1,11 +1,33 @@
+.splash-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .splash-screen {
   width: 100vw;
-  background: #2e2d69;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  position: absolute;
+  top: 50%;
+  height: 300px;
+  margin-top: -150px;
+}
+
+.container-1,
+.container-2,
+.container-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .container-1 path,

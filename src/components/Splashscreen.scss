@@ -1,13 +1,28 @@
-body {}
+.splash-container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    // display: flex;
+    // align-content: center;
+    justify-content: center;
+}
 
 .splash-screen {
     width: 100vw;
-    background: rgb(46, 45, 105);
     display: flex;
     justify-content: space-around;
+    align-content: center;
+    position: absolute;
+    top: 50%;
+    height: 300px;
+    margin-top: -150px;
 }
 
-.splash-screen * {}
+.container-1,
+.container-2,
+.container-3 {
+    display: flex;
+}
 
 .container-1 path,
 .container-3 path,

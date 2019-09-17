@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function LAMBORGHINI() {
     return (
-        <svg width="463" height="255" viewBox="0 0 463 255" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg style={{ margin: 'auto' }} width="463" height="255" viewBox="0 0 463 255" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M188.641 208.68L169.091 222.05H293.851L274.301 208.68H188.641Z" stroke="black" strokeWidth="2" />
             <path d="M89.131 132.27L78.681 145.77C85.251 149.17 92.461 150.76 98.511 151.45L90.901 132.99L89.131 132.27Z" stroke="black" strokeWidth="2" />
             <path d="M432.301 225.489C422.871 233.039 407.061 238.3 385.091 241.25C386.301 244.699 389.581 247.21 393.381 247.21H440.831C445.681 247.21 449.631 243.26 449.631 238.409V130.739C449.631 130.579 449.641 130.42 449.671 130.26C449.86 129.02 451.061 118.73 439.421 114.38C439.61 139.97 438.931 183.29 438.831 189.78C438.601 199.14 437.521 221.32 432.301 225.489Z" stroke="black" strokeWidth="2" />
