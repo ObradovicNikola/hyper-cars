@@ -25,6 +25,10 @@ export default class Home extends Component {
                         <div className="img-box">
                             <img src={`${process.env.PUBLIC_URL}/images/${car.img}`} alt={car.title} />
                             <div className="img-shadow"></div>
+                            {/* Indicator for mobile */}
+                            <div className="cursor-indicator">
+                                <i className="far fa-hand-pointer"></i>
+                            </div>
                         </div>
                     </Link>
                     <div className="wrapper">
@@ -60,7 +64,9 @@ export default class Home extends Component {
             slidesToShow: 1,
             slidesToScroll: 1,
             autoplay: true,
-            pauseOnHover: true
+            pauseOnHover: true,
+            swipe: true,
+            draggable: false
         };
 
         return (

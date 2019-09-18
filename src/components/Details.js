@@ -20,7 +20,7 @@ export default function Details(props) {
     // document.getElementById('root').scrollTo(0, 0)
     document.getElementById('root').scrollTo({
         top: 0,
-        behavior: 'smooth',
+        // behavior: 'smooth',
     })
     return (
         <div className="details-container">

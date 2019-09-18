@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { tsImportEqualsDeclaration } from '@babel/types'
 
 const initialState = {
     name: "",
@@ -77,19 +76,19 @@ export default class Form extends Component {
         return (
             // action="/action_page.php"
             // method="POST"
-            <form id="contact_form" method="GET" onSubmit={this.handleSubmit} enctype="multipart/form-data" >
-                <div class="row">
-                    <label className="required" for="name">Your name:</label><br />
-                    <input onChange={this.handleChange} class="name" type="text" name="name" size="30" placeholder="Name" value={this.state.name} /><br />
+            <form id="contact_form" method="GET" onSubmit={this.handleSubmit} encType="multipart/form-data" >
+                <div className="row">
+                    <label className="required" htmlFor="name">Your name:</label><br />
+                    <input onChange={this.handleChange} className="name" type="text" name="name" size="30" placeholder="Name" value={this.state.name} /><br />
                     <div className="error-message">{this.state.nameError}</div>
                 </div>
-                <div class="row">
-                    <label className="required" for="email">Your email:</label><br />
+                <div className="row">
+                    <label className="required" htmlFor="email">Your email:</label><br />
                     <input onChange={this.handleChangeEmail} value={this.state.email} name="email" size="30" placeholder="Email" /><br />
                     <div className="error-message">{this.state.emailError}</div>
                 </div>
-                <div class="row">
-                    <label className="required" for="message">Your message:</label><br />
+                <div className="row">
+                    <label className="required" htmlFor="message">Your message:</label><br />
                     <textarea onChange={this.handleChangeMessage} value={this.state.message} id="message" name="message" rows="7" cols="30" placeholder="Message..."></textarea><br />
                     <div className="error-message">{this.state.messageError}</div>
                 </div>

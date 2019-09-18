@@ -183,6 +183,15 @@ $highlight: rgb(255, 192, 0);
     transition: opacity .5s ease-in-out
 }
 
+.car-container .img-box .cursor-indicator {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 15px;
+    color: white;
+    display: none;
+}
+
 .car-container .img-box:hover {
     cursor: pointer;
 }
@@ -207,4 +216,36 @@ $highlight: rgb(255, 192, 0);
 
 .car-container .wrapper p {
     padding: 30px;
+}
+
+@media only screen and (max-width: 1250px) {
+    .car-container:nth-of-type(even) {
+        flex-direction: row;
+    }
+
+    .car-container:nth-of-type(odd),
+    .car-container:nth-of-type(even) {
+        flex-direction: column;
+    }
+
+    .car-container .wrapper {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .slide {
+        flex-direction: column-reverse;
+        padding: 5px;
+    }
+
+    .slide .img-box img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .car-container .img-box .cursor-indicator {
+        display: block;
+    }
 }
