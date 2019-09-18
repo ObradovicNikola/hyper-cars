@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bbea6dcb6c90379cf33cdbb415965631",
+    "revision": "fc542e39bce8f72de77aec5449378e84",
     "url": "/hyper-cars/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/hyper-cars/static/css/2.36f47b51.chunk.css"
   },
   {
-    "revision": "d6a2d2ebefcb7e12a2bf",
+    "revision": "ab43f15a27a5974c08d0",
     "url": "/hyper-cars/static/css/main.3f0a54c4.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/hyper-cars/static/js/2.448c0f43.chunk.js"
   },
   {
-    "revision": "d6a2d2ebefcb7e12a2bf",
-    "url": "/hyper-cars/static/js/main.9f264e32.chunk.js"
+    "revision": "ab43f15a27a5974c08d0",
+    "url": "/hyper-cars/static/js/main.b3bfaffb.chunk.js"
   },
   {
     "revision": "4a3249a685d0c090d6d1",

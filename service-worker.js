@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/hyper-cars/precache-manifest.dc799bcad4579104d7aa1681b2b4be05.js"
+  "/hyper-cars/precache-manifest.1750974665d322df642d550e781ec093.js"
 );
 
 self.addEventListener('message', (event) => {
