@@ -1,22 +1,22 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fc542e39bce8f72de77aec5449378e84",
+    "revision": "66eeacb7857b2bb803012e2ee8e2bdf1",
     "url": "/hyper-cars/index.html"
   },
   {
-    "revision": "942e169802f4e219efef",
-    "url": "/hyper-cars/static/css/2.36f47b51.chunk.css"
+    "revision": "940573a370bfb9d0257a",
+    "url": "/hyper-cars/static/css/2.7bff4c71.chunk.css"
   },
   {
-    "revision": "ab43f15a27a5974c08d0",
-    "url": "/hyper-cars/static/css/main.3f0a54c4.chunk.css"
+    "revision": "11720f31a0ea8e53d410",
+    "url": "/hyper-cars/static/css/main.bde82a4c.chunk.css"
   },
   {
-    "revision": "942e169802f4e219efef",
+    "revision": "940573a370bfb9d0257a",
     "url": "/hyper-cars/static/js/2.448c0f43.chunk.js"
   },
   {
-    "revision": "ab43f15a27a5974c08d0",
+    "revision": "11720f31a0ea8e53d410",
     "url": "/hyper-cars/static/js/main.b3bfaffb.chunk.js"
   },
   {

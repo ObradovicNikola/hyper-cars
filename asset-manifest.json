@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/hyper-cars/static/css/main.3f0a54c4.chunk.css",
+    "main.css": "/hyper-cars/static/css/main.bde82a4c.chunk.css",
     "main.js": "/hyper-cars/static/js/main.b3bfaffb.chunk.js",
     "main.js.map": "/hyper-cars/static/js/main.b3bfaffb.chunk.js.map",
     "runtime~main.js": "/hyper-cars/static/js/runtime~main.e18f5d02.js",
     "runtime~main.js.map": "/hyper-cars/static/js/runtime~main.e18f5d02.js.map",
-    "static/css/2.36f47b51.chunk.css": "/hyper-cars/static/css/2.36f47b51.chunk.css",
+    "static/css/2.7bff4c71.chunk.css": "/hyper-cars/static/css/2.7bff4c71.chunk.css",
     "static/js/2.448c0f43.chunk.js": "/hyper-cars/static/js/2.448c0f43.chunk.js",
     "static/js/2.448c0f43.chunk.js.map": "/hyper-cars/static/js/2.448c0f43.chunk.js.map",
     "index.html": "/hyper-cars/index.html",
-    "precache-manifest.1750974665d322df642d550e781ec093.js": "/hyper-cars/precache-manifest.1750974665d322df642d550e781ec093.js",
+    "precache-manifest.d650ef4e08738d4c951f731690728988.js": "/hyper-cars/precache-manifest.d650ef4e08738d4c951f731690728988.js",
     "service-worker.js": "/hyper-cars/service-worker.js",
-    "static/css/2.36f47b51.chunk.css.map": "/hyper-cars/static/css/2.36f47b51.chunk.css.map",
-    "static/css/main.3f0a54c4.chunk.css.map": "/hyper-cars/static/css/main.3f0a54c4.chunk.css.map",
+    "static/css/2.7bff4c71.chunk.css.map": "/hyper-cars/static/css/2.7bff4c71.chunk.css.map",
+    "static/css/main.bde82a4c.chunk.css.map": "/hyper-cars/static/css/main.bde82a4c.chunk.css.map",
     "static/media/all.min.css": "/hyper-cars/static/media/fa-solid-900.d6d8d5da.woff2",
     "static/media/slick-theme.css": "/hyper-cars/static/media/slick.f97e3bbf.svg"
   }
