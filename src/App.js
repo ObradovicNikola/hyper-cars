@@ -17,9 +17,9 @@ function App() {
         <Navbar />
         <Switch>
           {/* path= /hyper-cars/ */}
-          <Route exact path="/" component={Home}></Route>
-          <Route path="/contact" component={Contact}></Route>
-          <Route path="/details" component={Details}></Route>
+          <Route exact path="/hyper-cars/" component={Home}></Route>
+          <Route path="/hyper-cars/contact" component={Contact}></Route>
+          <Route path="/hyper-cars/details" component={Details}></Route>
           <Route component={Default}></Route>
         </Switch>
       </BrowserRouter>
